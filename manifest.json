@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "0進捗報告に震えろ",
+  "version": "1.0",
+  "description" : "0進捗どうですか",
+  "browser_action" : {
+    "default_icon" : "icons/icon128.png",
+    "default_title" : "うわああああああああああああ"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-2.1.4.min.js", "adBlock.js"],
+      "run_at" : "document_end"
+    }
+  ]
+}
